@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Codeigniter 3 - Generate PDF from view using dompdf library with example</title>
+	<title>Codeigniter 3</title>
 </head>
 <body>
 
@@ -16,7 +16,7 @@ foreach($murid as $m)
 <table style="border:1px solid red;width:100%;">
 	<tr>
 		<th style="border:1px solid red">Name</th>
-		<th style="border:1px solid red">Email</th>
+		<th style="border:1px solid red">Kelas</th>
 	</tr>
 	<tr>
 		<td style="border:1px solid red"><?= $m->nama; ?></td>

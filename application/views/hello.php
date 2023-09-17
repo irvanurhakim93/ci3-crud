@@ -47,6 +47,8 @@
         <h2>Welcome to the CRUD Page</h2>
         <h2>Ini adalah data yang bisa kami sajikan</h2>
         <a href="<?= base_url('/index.php/crud/create') ?>" class="btn btn-success">Tambah Data</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="<?= base_url('index.php/crud/printpdf') ?>" class="btn btn-warning">Print PDF</a>
         <br>
         <table class="table table-bordered">
             <thead>
@@ -54,7 +56,7 @@
                   <td>No</td>
                     <th>Nama</th>
                     <th>Kelas</th>
-                    <th colspan="3">Aksi</th>
+                    <th colspan="2">Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -69,7 +71,7 @@
                     <td><?= $m->kelas;?></td>
                     <td><a href="<?= base_url('index.php/crud/edit/'. $m->id) ?>" class="btn btn-primary">Ubah</a></td>
                     <td><a href="<?= base_url('index.php/crud/destroy/'. $m->id) ?>" class="btn btn-danger">Hapus</a></td>
-                    <td><a href="<?= base_url('index.php/crud/printpdf') ?>" class="btn btn-warning">Print PDF</a></td>
+                  
                 </tr>
             </tbody>
             <?php } ?>
